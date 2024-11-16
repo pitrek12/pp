@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاستعلامات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>الاستعلامات</h1>
+    </header>
+    <div class="queries-container">
+        <form action="display_data.html" method="GET">
+            <div class="search-field">
+                <input type="text" name="search" placeholder="ابحث عن البيانات" required>
+                <button type="submit" class="btn">بحث</button>
+            </div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>اسم المصنع</th>
+                    <th>التاريخ</th>
+                    <th>الملف</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- البيانات المدخلة ستظهر هنا بعد البحث -->
+                <tr>
+                    <td>مصنع 1</td>
+                    <td>2024-11-01</td>
+                    <td><a href="#">تحميل الملف</a></td>
+                </tr>
+                <tr>
+                    <td>مصنع 2</td>
+                    <td>2024-11-02</td>
+                    <td><a href="#">تحميل الملف</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

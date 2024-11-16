@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدخال البيانات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>إدخال البيانات</h1>
+    </header>
+    <div class="form-container">
+        <form action="display_data.html" method="POST" enctype="multipart/form-data">
+            <div class="input-field">
+                <label for="factory_name">اسم المصنع</label>
+                <input type="text" id="factory_name" name="factory_name" required>
+            </div>
+            <div class="input-field">
+                <label for="date">التاريخ</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input-field">
+                <label for="file">رفع ملف (صور، Excel، PDF)</label>
+                <input type="file" id="file" name="file" accept=".jpg,.jpeg,.png,.pdf,.xls,.xlsx" required>
+            </div>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
